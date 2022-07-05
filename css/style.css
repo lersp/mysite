@@ -1,6 +1,10 @@
 body {
-	background-color: #888888;
-	color: #e1e1e1;
-	margin: 0px auto;
-	padding: 0px;
+	background: rgba(30, 30, 30, 0.6) url(../imagens/Starting_Overlay.jpg) no-repeat center top;
+	background-size: 1920px;
+	background-blend-mode:multiply;
+}
+.topbar-grad {
+	width: auto;
+	height: 3px;
+	background: linear-gradient(65deg,#E16D2F, #C39C1B, #94AD24, #59B819, #27BB29);
 }
