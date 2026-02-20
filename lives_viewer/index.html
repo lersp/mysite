@@ -13,9 +13,30 @@
             padding: 20px;
         }
         h1 { text-align: center;color: #ff0000;}
+        /* Container organizador lives*/
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <h1>Lives TransAmazonica</h1>
+    <h1>Lives Trans-Amazônica</h1>
+    <div class="video-grid">
+
+        <div class="video-card">
+            <div class="video-container">
+                <iframe src="" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3>Live</h3>
+            </div>
+        </div>
+
+        
+    </div>
 </body>
 </html>
