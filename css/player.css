@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+a {}
 
 .main-stage {
     width: 100%;
@@ -25,4 +26,13 @@ body {
     aspect-ratio: 16/9;
     background: #000;
 }
+
 iframe {width: 100%; height: 100%;border: none;}
+
+.video-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
