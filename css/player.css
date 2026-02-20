@@ -29,10 +29,14 @@ a {}
 
 iframe {width: 100%; height: 100%;border: none;}
 
-.video-card {
+.video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+}
+
+.video-card {
+    background: var(--card-bg);
 }
