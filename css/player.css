@@ -14,7 +14,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
- a { color: pink;}
+ a { color: pink;
+font-size: 0.8em;
+}
 
 .main-stage {
     width: 100%;
