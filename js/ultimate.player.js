@@ -3,7 +3,7 @@ const gallery = document.getElementById('gallery');
 
 async function initGallery() {
     try {
-        const response = await fetch(`lives.txt`);
+        const response = await fetch(`lives.txt?v=${new Date().getTime()}`);
         const data = await response.text();
 
         const lines = data.split('\n').filter(line => line.trim() !== '');
