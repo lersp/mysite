@@ -21,7 +21,7 @@ async function initGallery() {
             card.innerHTML = `
                 <div class="thumb-video-container">
                     <iframe
-                        src="https://www.youtube.com/${cleanID}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3"
+                        src="https://www.youtube.com/embed/${cleanID}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3"
                         allow="autoplay; encrypted-media"
                         loading="lazy">
                     </iframe>
