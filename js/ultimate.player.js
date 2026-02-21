@@ -13,7 +13,8 @@ async function initGallery() {
             const cleanID = id.trim();
             const cleanTitle = title ? title.trim() : `Live ${index + 1}`;
 
-            
+            const card = document.createElement('div');
+            card.className = 'video-card';
             if (index === 0) card.classList.add('active');
 
             card.innerHTML = `
