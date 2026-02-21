@@ -56,6 +56,15 @@ iframe {width: 100%; height: 100%;border: none;}
     background: #252525;
 }
 
+.video-card img {
+    transition: filter 0.3s;
+    filter: grayscale(30%); /* Fica um pouco mais sóbrio */
+}
+
+.video-card.active img {
+    filter: grayscale(0%); /* O vídeo ativo fica colorido */
+}
+
 .thumb-preview {
     width: 100%;
     aspect-ratio: 16 / 9;
