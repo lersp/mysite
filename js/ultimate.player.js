@@ -19,7 +19,7 @@ async function initGallery() {
             if (index === 0) card.classList.add('active');
 
             card.innerHTML = `
-                <img class="thumb-preview" src="https://img.youtube.com/${cleanID}/mqdefault.jpg" alt="Thumb">
+                <img class="thumb-preview" src="https://i.ytimg.com/vi/${cleanID}/sddefault.webp" alt="Thumb">
                 <span class="video-title">${cleanTitle}</span>
             `;
 
