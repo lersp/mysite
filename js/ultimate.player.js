@@ -19,7 +19,14 @@ async function initGallery() {
             if (index === 0) card.classList.add('active');
 
             card.innerHTML = `
-                <img class="thumb-preview" src="https://i.ytimg.com/vi/${cleanID}/sddefault.jpg" alt="Thumb">
+                <div class="thumb-video-container">
+                    <iframe
+                        src="https://www.youtube.com/${cleanID}?autoplay=1&mute=1&controls=0&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3"
+                        allow="autoplay; encrypted-media"
+                        loading="lazy">
+                    </iframe>
+                    <div class="click-overlay"></div>
+                </div>
                 <span class="video-title">${cleanTitle}</span>
             `;
 
