@@ -18,6 +18,24 @@ async function initGallery() {
                 <span class="video-title">${cleanTitle}</span>
             `;
 
-        })
+            card.onclick = () => {
+                updatePlayer(cleanID);
+
+                document.querySelectorAll('.video-card').forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            };
+
+            gallery.appendChild(card);
+
+            if (index === 0) updatePlayer(cleanID);
+        });
+    } catch (err) {
+        console.error("Erro crítico:", err);
+        gallery.innerHTML = "<p>⚠️ Use o Live Server para carregar o arquivo .txt";
     }
 }
+
+function updatePlayer(id) {
+    player.src = `https://www.youtube.com{id}?autoplay=1&mute=1&enablejsapi=1`
+}
+initGallery();
