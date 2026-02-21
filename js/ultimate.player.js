@@ -19,7 +19,7 @@ async function initGallery() {
             if (index === 0) card.classList.add('active');
 
             card.innerHTML = `
-                <img class="thumb-preview" src="https://img.youtube.com{cleanID}/mqdefault.jpg" alt="Thumb">
+                <img class="thumb-preview" src="https://img.youtube.com/{cleanID}/mqdefault.jpg" alt="Thumb">
                 <span class="video-title">${cleanTitle}</span>
             `;
 
@@ -41,7 +41,7 @@ async function initGallery() {
 }
 
 function updatePlayer(id) {
-    player.src = `https://www.youtube.com{id}?autoplay=1&mute=1&enablejsapi=1`
+    player.src = `https://www.youtube.com/embed/{id}?autoplay=1&mute=1&enablejsapi=1`
 }
 
 initGallery();
