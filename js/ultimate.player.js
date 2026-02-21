@@ -3,14 +3,17 @@ const gallery = document.getElementById('gallery');
 
 async function initGallery() {
     try {
-        const response = await fetch(`../lives_viewer/lives.txt?v=${new Date().getTime()}`);
+        const response = await fetch(`lives.txt?v=${new Date().getTime()}`);
         const data = await response.text();
 
         const lines = data.split('\n').filter(line => line.trim() !== '');
 
-        lines.forEach((line,index) => {
-            const [id,title] = line.split(',');
+        lines.forEach((line, index) => {
+            const [id, title] = line.split(',');
             const cleanID = id.trim();
+            const cleanTitle = title ? title.trim() : `Live ${index + 1}`;
+
+            
             if (index === 0) card.classList.add('active');
 
             card.innerHTML = `
@@ -38,4 +41,5 @@ async function initGallery() {
 function updatePlayer(id) {
     player.src = `https://www.youtube.com{id}?autoplay=1&mute=1&enablejsapi=1`
 }
+
 initGallery();

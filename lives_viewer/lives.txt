@@ -1,6 +1,6 @@
-WTGxo4GrLXQ,Live gORDOx
-N0lqE1yAduE,Live Rato Borrachudo
-iJ88Uhj-xHg,Live Cariani
-xUV-WtgFSAE,Live ACF
--W_F6_G5a9c,Live Richard Rasmussen
-aXDxINGvacI,Live Inverno Transamazonica
+WTGxo4GrLXQ,gORDOx
+N0lqE1yAduE,Rato Borrachudo
+iJ88Uhj-xHg,Cariani
+xUV-WtgFSAE,ACF
+-W_F6_G5a9c,Richard Rasmussen
+aXDxINGvacI,Inverno Transamazonica
