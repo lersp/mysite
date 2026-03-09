@@ -1,1 +1,34 @@
+name: Toggle Maintenance Mode
 
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Selecione o modo'
+        required: true
+        default: 'maintenance'
+        type: choice
+        options:
+          - maintenance
+          - live
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Maintenance
+        if: ${{github.event.inputs.mode == 'maintenance' }}
+        run: cp maintenance.html index.html
+      - name: Setup Live Site
+        if: ${{github.event.inputs.mode == 'live' }}
+        run: cp src/index.html index.html
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add index.html
+          git commit -m "Switch to ${{github.event.inputs.mode}} Mode"
+          git push
