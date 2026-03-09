@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Manutenção | Nome do Projeto</title>
+    <style>
+        :root {
+            --primary-color: #24292e; /* Tom escuro estilo GitHub */
+            --accent-color: #0366d6;
+            --text-color: #586069;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle, #ffffff 0%, #f6f8fa 100%);
+            color: var(--primary-color);
+        }
+
+        .card {
+            text-align: center;
+            padding: 40px;
+            max-width: 500px;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+        }
+
+        .icon {
+            font-size: 64px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-color);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: var(--accent-color);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #005cc5;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #959da5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon">🚀</div>
+        <h1>Estamos Preparando Algo Novo</h1>
+        <p>
+            Nosso site está passando por uma manutenção programada para melhorar a performance e segurança. Voltaremos em alguns instantes.
+        </p>
+        
+        <a href="mailto:contato@seudominio.com" class="btn">Me Avise por E-mail</a>
+
+        <footer>
+            &copy; 2026 • Seu Nome ou Empresa
+        </footer>
+    </div>
+
+</body>
+</html>
