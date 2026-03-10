@@ -20,6 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 containerProjetos.appendChild(div);
             });
+
+            const redes = data.perfil.contato;
+            const contArea = document.getElementById('social-links');
+            contArea.innerHTML = `
+                <a href="mailto:${redes.email}" target="_blank">Email</a> |
+                <a href="${redes.linkedin}" target="_blank">LinkedIn</a> | 
+                <a href="${redes.github}" target="_blank">GitHub</a> | 
+                <a href="${redes.youtube}" target="_blank">YouTube</a>
+            `;
+
+
+
                 
 
         })

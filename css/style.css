@@ -3,7 +3,10 @@
 	--glass-border: rgba(255, 255, 255, 0.2);
 	--text-color: #ffffff;
 }
-
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
 body {
 	margin: 0;
 	padding: 0;

@@ -1,62 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title id="site-title">titulo</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <!-- Requided JavaScript -->
     <script src="/js/config.js"></script>
     <script src="/js/data.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Inicio navBar -->
     <header>
-        <div class="topbar-grad"></div>
-        <nav class="navbar-container">
-            <div class="glass-nav" id="navBar"></div>
-        </nav>
+      <div class="topbar-grad"></div>
+      <nav class="navbar-container">
+        <div class="glass-nav" id="navBar"></div>
+      </nav>
     </header>
     <!-- Fim navBar -->
     <!-- Inicio Conteudo -->
-    <content>
-        <section>
-            <div id="nome"></div>
-            <div id="titulo"></div>
-            <div class="" id="resumo"></div>
-        </section>
-        <section>
-            <h3>Tecnologia:</h3>
-            <ul id="lista-tech"></ul>
-        </section>
 
-        <section>
-            <h3>Projeto:</h3>
-            <ul id="lista-projetos"></ul>
-        </section>
-    </content>
+    <section
+      id="home"
+      style="
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
+    >
+      <div id="nome"></div>
+      <div id="titulo"></div>
+      <div class="" id="resumo"></div>
+    </section>
+
+    <section id="about">
+      <h3>Tecnologia:</h3>
+      <ul id="lista-tech"></ul>
+    </section>
+
+    <section id="work">
+      <h3>Projeto:</h3>
+      <ul id="lista-projetos"></ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contato</h3>
+      <p>Interessado em IAM Ops ou Power Platform? Vamos conversar!</p>
+      <div id="social-links"></div>
+    </section>
     <!-- Fim Conteudo -->
-    <!-- Inicio Rodape -->
-    <footer>
-        <ul id="links-sociais"></ul>
-    </footer>
-    <!-- Fim Rodape -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
