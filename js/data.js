@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             //perfil
             document.getElementById('nome').textContent = data.perfil.nome;
-            document.getElementById('cargo').textContent = data.perfil.cargo;
-            document.getElementById('bio').textContent = data.perfil.bio;
+            document.getElementById('titulo').textContent = data.perfil.titulo;
+            document.getElementById('resumo').textContent = data.perfil.resumo;
 
             //tecnologias
             const lista = document.getElementById('lista-tech');
