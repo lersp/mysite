@@ -1,7 +1,12 @@
 body {
-	background: rgba(30, 30, 30, 0.6) url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center top;
+	background: rgba(10, 10, 10, 0.6) url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center top;
 	background-size: 1920px;
 	background-blend-mode:multiply;
+}
+header{
+width: auto;
+height: 100px;
+align-self: center;
 }
 .topbar-grad {
 	width: auto;
