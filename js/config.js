@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('./config.json')
+    fetch('config.json')
         .then(response => response.json())
         .then(config => {
             document.getElementById('nome').textContent = config.nome;
