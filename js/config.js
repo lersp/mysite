@@ -10,11 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // menu ## nao funciona ##
             const contNavBar = document.getElementById('navBar');
             config.navBar.forEach(menu => {
-                let li = document.createElement('li');
-                li.innerHTML = `
+                contNavBar.innerHTML = `
                     <a href="#${menu.menuName}">${menu.menuName}</a>
                 `;
-                contNavBar.appendChild(li);
             });
         })
         .catch(err => {
