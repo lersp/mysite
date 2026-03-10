@@ -1,26 +1,19 @@
 {
-    "perfil": {
-        "nome": "Lucas Pinto",
-        "cargo": "Analista de TI",
-        "bio": "Especialista em IAM Ops"
+  "perfil_profissional": {
+    "nome": "Lucas Pinto",
+    "titulo": "Identity Management Operation Specialist",
+    "localizacao": "Itu, São Paulo, Brasil",
+    "contato": {
+      "email": "lucas.lersp@gmail.com",
+      "github": "https://github.com/lersp",
+      "linkedin": "https://www.linkedin.com/in/lucaspintoitu/",
+      "youtube": "https://www.youtube.com/@LucasERSP"
     },
-    "links_sociais": {
-        "github": "https://github.com/lersp",
-        "linkedin": "https://www.linkedin.com/in/lucaspintoitu/",
-        "youtube": "https://www.youtube.com/@LucasERSP"
+    "resumo": "Mais de vinte anos de experiência em suporte técnico de TI, com dois anos dedicados à gestão de negócios e projetos e dois anos ao treinamento de pessoas.",
+    "competencias": {
+      "tecnicas": ["Splunk", "Spl", "SQL Server Management Studio", "HTML 5", "CSS 3", "SQL", "IAM", "SPLUNK", "WINDOWS SERVER", "POWERSHELL", "MACOS", "JS", "POWER PLATFORM"],
+      "especialidades": ["Gerenciamento de Identidade (IAM)", "Power Platform (App e Flow)", "Administração de Servidores"]
     },
-    "tecnologias": [
-        "HTML 5",
-        "CSS3",
-        "SQL",
-        "IAM",
-        "SPLUNK",
-        "WINDOWS SERVER",
-        "POWERSHELL",
-        "MACOS",
-        "JS",
-        "POWER PLATFORM"
-    ],
     "projetos": [
         {
             "titulo": "Lucas Pinto | WebPortifolio",
@@ -29,13 +22,84 @@
             "link": "https://www.lersp.com.br"
         }
     ],
-    "experiencias": [{
-
-    }],
-    "educacao": [{
-
-    }],
     "hobbies": [{
 
-    }]
+    }],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo ou Bilíngue" },
+      { "idioma": "Inglês", "nivel": "Nativo ou Bilíngue" },
+      { "idioma": "Francês", "nivel": "Intermediário (estimativa) / Proficiência Limitada" },
+      { "idioma": "Espanhol", "nivel": "Proficiência Limitada" }
+    ],
+    "certificacoes": [
+      "Microsoft Certified: Power Platform Fundamentals",
+      "Fluência Duolingo em Francês: Intermediário"
+    ],
+    "experiencia": [
+      {
+        "empresa": "Bosch Digital",
+        "cargo": "Identity Management Operation Specialist",
+        "periodo": "Outubro 2024 - Presente",
+        "descricao": "Responsável pela operação e suporte de aplicações IAM, monitoramento de desempenho e garantia de conformidade."
+      },
+      {
+        "empresa": "Bosch",
+        "historico": [
+          {
+            "cargo": "Analista de Suporte",
+            "periodo": "Janeiro 2023 - Outubro 2024",
+            "descricao": "Representante de suporte do programa IDE para a América Latina."
+          },
+          {
+            "cargo": "Analista de Suporte Júnior",
+            "periodo": "Janeiro 2021 - Janeiro 2023",
+            "descricao": "Atuação com consultoria técnica, criação de fluxos em Power Platform e suporte regional."
+          },
+          {
+            "cargo": "Técnico Júnior de TI",
+            "periodo": "Abril 2019 - Janeiro 2021"
+          },
+          {
+            "cargo": "Assistente Sênior de Suporte",
+            "periodo": "Novembro 2017 - Abril 2019"
+          }
+        ]
+      },
+      {
+        "empresa": "Stefanini",
+        "cargo": "Analista de Suporte",
+        "periodo": "Março 2013 - Dezembro 2016",
+        "descricao": "Gestão de incidentes, suporte bilíngue e atendimento VIP."
+      },
+      {
+        "empresa": "InfoCares",
+        "cargo": "Proprietário",
+        "periodo": "Janeiro 2011 - Fevereiro 2014",
+        "descricao": "Gestão de clientes, processos administrativos e serviços de TI."
+      },
+      {
+        "empresa": "Factorway Fomento Mercantil Ltda",
+        "cargo": "Técnico de Informática",
+        "periodo": "Janeiro 2006 - Março 2010",
+        "descricao": "Administração de infraestrutura de TI e servidores."
+      }
+    ],
+    "formacao": [
+      {
+        "instituicao": "Faculdade Facuminas Ltda",
+        "curso": "Pós-graduação em Tecnologia da Informação",
+        "previsao_conclusao": "Janeiro 2026"
+      },
+      {
+        "instituicao": "Centro Universitário Sant'Anna",
+        "curso": "Bacharelado em Administração de Empresas",
+        "periodo": "2007 - 2011"
+      },
+      {
+        "instituicao": "FIEC/CEPIN",
+        "curso": "Técnico em Programação de Computadores",
+        "periodo": "2002 - 2003"
+      }
+    ]
+  }
 }
