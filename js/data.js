@@ -7,14 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('titulo').textContent = data.perfil.titulo;
             document.getElementById('resumo').textContent = data.perfil.resumo;
 
-            //tecnologias
-            const lista = document.getElementById('lista-tech');
-            data.tecnologias.forEach(tech => {
-                let li = document.createElement('li');
-                li.textContent = tech;
-                lista.appendChild(li);
-            });
-
+        
             //projetos
             const containerProjetos = document.getElementById('lista-projetos');
             data.projetos.forEach(proj => {
