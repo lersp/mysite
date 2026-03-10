@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(config => {
             //titulo site (meta)
-            const projetoPrincipal = data.projetos[0];
+            const projetoPrincipal = config.projetos[0];
             document.getElementById('site-title').textContent = projetoPrincipal.titulo;
             
             // menu
-            const containerNavBar = document.ATTRIBUTE_NODE('navBar');
+            const containerNavBar = document.getElementById('navBar');
             config.navBar.forEach(menu => {
                 let li = document.createElement('li');
                 li.textContent = menuName;
