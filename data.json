@@ -8,12 +8,12 @@
       "github": "https://github.com/lersp",
       "linkedin": "https://www.linkedin.com/in/lucaspintoitu/",
       "youtube": "https://www.youtube.com/@LucasERSP"
-    },
+      },
     "resumo": "Mais de vinte anos de experiência em suporte técnico de TI, com dois anos dedicados à gestão de negócios e projetos e dois anos ao treinamento de pessoas.",
     "competencias": {
       "tecnicas": ["Splunk", "Spl", "SQL Server Management Studio", "HTML 5", "CSS 3", "SQL", "IAM", "SPLUNK", "WINDOWS SERVER", "POWERSHELL", "MACOS", "JS", "POWER PLATFORM"],
       "especialidades": ["Gerenciamento de Identidade (IAM)", "Power Platform (App e Flow)", "Administração de Servidores"]
-    },
+      },
     "projetos": [
         {
             "titulo": "Lucas Pinto | WebPortifolio",
@@ -21,7 +21,7 @@
             "tecnologias": ["HTML 5", "CSS3", "JS", "Bootstrap"],
             "link": "https://www.lersp.com.br"
         }
-    ],
+],
     "hobbies": ["Tocar Contrabaixo","Jogar Voleyball","Jogar VideoGame","Academia","Viajar em família"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo ou Bilíngue" },

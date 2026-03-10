@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
             //projetos
             const containerProjetos = document.getElementById('lista-projetos');
-            data.projetos.forEach(proj => {
+            data.perfil.projetos.forEach(proj => {
                 let div = document.createElement('div');
                 div.innerHTML = `
                     <h4>${proj.titulo}</h4>
@@ -27,5 +27,3 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Erro ao carregar o arquivo de configuração:', error);
         });
 });
-
-//
