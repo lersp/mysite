@@ -1,0 +1,41 @@
+{
+    "perfil": {
+        "nome": "Lucas Pinto",
+        "cargo": "Analista de TI",
+        "bio": "Especialista em IAM Ops"
+    },
+    "links_sociais": {
+        "github": "https://github.com/lersp",
+        "linkedin": "https://www.linkedin.com/in/lucaspintoitu/",
+        "youtube": "https://www.youtube.com/@LucasERSP"
+    },
+    "tecnologias": [
+        "HTML 5",
+        "CSS3",
+        "SQL",
+        "IAM",
+        "SPLUNK",
+        "WINDOWS SERVER",
+        "POWERSHELL",
+        "MACOS",
+        "JS",
+        "POWER PLATFORM"
+    ],
+    "projetos": [
+        {
+            "titulo": "Lucas Pinto | WebPortifolio",
+            "descricao": "Meu portifólio online onde coloco em prática meus conhecimentos em desenvolvimento web e apresento meu Curriculo",
+            "tecnologias": ["HTML 5", "CSS3", "JS", "Bootstrap"],
+            "link": "https://www.lersp.com.br"
+        }
+    ],
+    "experiencias": [{
+
+    }],
+    "educacao": [{
+
+    }],
+    "hobbies": [{
+
+    }]
+}
