@@ -54,5 +54,13 @@
                 }
             ]
         }
+    ],
+    "projetos": [
+        {
+            "titulo": "Lucas Pinto | WebPortifolio",
+            "descricao": "Meu portifólio online onde coloco em prática meus conhecimentos em desenvolvimento web e apresento meu Curriculo",
+            "tecnologias": ["HTML 5", "CSS3", "JS", "Bootstrap"],
+            "link": "https://www.lersp.com.br"
+        }
     ]
 }

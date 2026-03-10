@@ -2,10 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            //titulo site (meta)
-            const projetoPrincipal = data.projetos[0];
-            document.getElementById('site-title').textContent = projetoPrincipal.titulo;
-            
             //perfil
             document.getElementById('nome').textContent = data.perfil.nome;
             document.getElementById('cargo').textContent = data.perfil.cargo;
