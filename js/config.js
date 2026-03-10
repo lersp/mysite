@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('config.json')
         .then(response => response.json())
         .then(config => {
-            document.getElementById('nome').textContent = config.nome;
-            document.getElementById('cargo').textContent = config.cargo;
+            document.getElementById('nome').textContent = config.perfil.nome;
+            document.getElementById('cargo').textContent = config.perfil.cargo;
 
             const lista = document.getElementById('lista-tech');
             config.tecnologias.forEach(tech => {
