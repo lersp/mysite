@@ -6,14 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
             //titulo site (meta) ## funcionou ##
             const projetoPrincipal = config.projetos[0];
             document.getElementById('site-title').textContent = projetoPrincipal.titulo;
-            
+
             // menu ## nao funciona ##
             const contNavBar = document.getElementById('navBar');
-            config.navBar.forEach(menuName => {
+            config.navBar.forEach(menu => {
                 let li = document.createElement('li');
-                li.textContent = menuName;
+                li.innerHTML = `
+                    <div>teste: ${menu.menuName}</div>
+                `;
                 contNavBar.appendChild(li);
             });
         })
-        .catch(error => { console.error('Erro ao carregar o arquivo de configuração', error) })
+        .catch(err => {
+            console.error('Erro ao carregar o arquivo de configuração:', err);
+        });
 });
