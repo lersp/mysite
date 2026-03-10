@@ -1,7 +1,9 @@
 :root {
-	--glass-bg: rgba(255, 255, 255, 0.15);
+	--glass-bg: rgba(255, 255, 255, 0.1);
 	--glass-border: rgba(255, 255, 255, 0.2);
-	--text-color: #ffffff;
+	--text-primary: #ffffff;
+	--text-secondary: #cbd5e0;
+    --accent-color: #63b3ed; /* Um tom de azul para links e destaque */
 }
 html{
 	scroll-behavior: smooth;
@@ -10,11 +12,11 @@ html{
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Segoe UI', sans-serif;
-	background: linear-gradient(45deg, #0f0c29, #302b63, #24243e) url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center top;
-	background-size: 1920px;
-	background-blend-mode:multiply;
+	font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+	background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+	color: var(--text-primary);
 	min-height: 100vh;
+	line-height: 1.6;
 }
 
 .topbar-grad {
@@ -25,7 +27,7 @@ body {
 
 .navbar-container {
 	position: fixed;
-	top: 20px;
+	top: 25px;
 	left: 0;
 	width: 100%;
 	justify-content: center;
@@ -33,28 +35,62 @@ body {
 }
 .glass-nav {
 	display: flex;
-	gap: 30px;
-	padding: 15px 40px;
+	gap: 2rem;
+	padding: 0.8rem 2.5rem;
 
 	background: var(--glass-bg);
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 
 	border: 1px solid var(--glass-border);
 	border-radius: 50px;
-	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);	
+	box-shadow: 0 8px 3px 0 rgba(0, 0, 0, 0.5);	
 }
 
 .glass-nav a {
-	color: var(--text-color);
+	color: var(--text-primary);
 	text-decoration: none;
+	font-size: 0.95rem;
 	font-weight: 500;
-	transition: 0.3s;
+	transition: all 0.3s ease;
 	opacity: 0.8;
+	text-transform: capitalize;
 }
 
 .glass-nav a:hover {
 	opacity: 1;
 	transform: translateY(-2px);
+	color: var(--accent-color);
+}
+section {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 80px 20px;
+	min-height: 60vh;
+}
+#home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+}
 
+h1 {font-size: 3rem; margin-bottom: 0.5rem;}
+h2 {font-weight: 300; color: var(--accent-color); margin-bottom: 1.5rem;}
+
+#lista-tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	list-style: none;
+	padding: 0;
+}
+#lista-tech li {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
 }
