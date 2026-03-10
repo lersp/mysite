@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             config.navBar.forEach(menu => {
                 let li = document.createElement('li');
                 li.innerHTML = `
-                    <div>${menu.menuName}</div>
+                    <a href="#${menu.menuName}">${menu.menuName}</a>
                 `;
                 contNavBar.appendChild(li);
             });

@@ -1,12 +1,17 @@
+:root {
+	--glass-bg: rgba(255, 255, 255, 0.15);
+	--glass-border: rgba(255, 255, 255, 0.2);
+	--text-color: #ffffff;
+}
+
 body {
-	background: rgba(10, 10, 10, 0.6) url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center top;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', sans-serif;
+	background: linear-gradient(45deg, #0f0c29, #302b63, #24243e) url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center top;
 	background-size: 1920px;
 	background-blend-mode:multiply;
-}
-header{
-width: auto;
-height: 100px;
-align-self: center;
+	min-height: 100vh;
 }
 .topbar-grad {
 	width: auto;
