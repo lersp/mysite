@@ -13,8 +13,45 @@ body {
 	background-blend-mode:multiply;
 	min-height: 100vh;
 }
+
 .topbar-grad {
 	width: auto;
 	height: 3px;
 	background: linear-gradient(65deg,#E16D2F, #C39C1B, #94AD24, #59B819, #564599);
+}
+
+.navbar-container {
+	position: fixed;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	justify-content: center;
+	z-index: 1000;
+}
+.glass-nav {
+	display: flex;
+	gap: 30px;
+	padding: 15px 40px;
+
+	background: var(--glass-bg);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+
+	border: 1px solid var(--glass-border);
+	border-radius: 50px;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);	
+}
+
+.glass-nav a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.3s;
+	opacity: 0.8;
+}
+
+.glass-nav a:hover {
+	opacity: 1;
+	transform: translateY(-2px);
+
 }
