@@ -22,9 +22,7 @@
             "link": "https://www.lersp.com.br"
         }
     ],
-    "hobbies": [{
-
-    }],
+    "hobbies": ["Tocar Contrabaixo","Jogar Voleyball","Jogar VideoGame","Academia","Viajar em família"],
     "idiomas": [
       { "idioma": "Português", "nivel": "Nativo ou Bilíngue" },
       { "idioma": "Inglês", "nivel": "Nativo ou Bilíngue" },
