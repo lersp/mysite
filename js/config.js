@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('site-title').textContent = projetoPrincipal.titulo;
             
             // menu ## nao funciona ##
-            const containerNavBar = document.getElementById('navBar');
-            config.navBar.forEach(menu => {
+            const contNavBar = document.getElementById('navBar');
+            config.navBar.forEach(menuName => {
                 let li = document.createElement('li');
-                li.textContent = menu;
-                containerNavBar.appendChild(li);
+                li.textContent = menuName;
+                contNavBar.appendChild(li);
             });
         })
         .catch(error => { console.error('Erro ao carregar o arquivo de configuração', error) })
