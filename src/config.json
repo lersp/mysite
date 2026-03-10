@@ -1,0 +1,58 @@
+{
+    "navBar": [
+        {
+            "menuName": "home",
+            "menuLink": "#"
+        },
+        {
+            "menuName": "about",
+            "menuLink": "#",
+            "menuDrop": [
+                {
+                    "dropName": "personal",
+                    "dropLink": "#"
+                },
+                {
+                    "dropName": "education",
+                    "dropLink": "#"
+                },
+                {
+                    "dropName": "certification",
+                    "dropLink": "#"
+                },
+                {
+                    "dropName": "hobbies",
+                    "dropLink": "#"
+                }
+            ]
+        },
+        {
+            "menuName": "work",
+            "menuLink": "#",
+            "menuDrop": [
+                {
+                    "dropName": "experience",
+                    "dropLink": "#"
+                },
+                {
+                    "dropName": "Skills",
+                    "dropLink": "#"
+                }
+            ]
+        },
+        {
+            "menuName": "contact",
+            "menuLink": "#",
+            "menuDrop": [
+                {
+                    "dropName": "email",
+                    "dropLink": "#"
+                },
+                {
+                    "dropName": "social media",
+                    "dropLink": "#"
+                }
+            ]
+        }
+    ]
+}
