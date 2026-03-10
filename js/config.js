@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('config.json')
         .then(response => response.json())
         .then(config => {
-            //titulo site (meta)
+            //titulo site (meta) ## funcionou ##
             const projetoPrincipal = config.projetos[0];
             document.getElementById('site-title').textContent = projetoPrincipal.titulo;
             
-            // menu
+            // menu ## nao funciona ##
             const containerNavBar = document.getElementById('navBar');
             config.navBar.forEach(menu => {
                 let li = document.createElement('li');
-                li.textContent = menuName;
+                li.textContent = menu;
                 containerNavBar.appendChild(li);
             });
         })
