@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('site-title').textContent = projetoPrincipal.titulo;
 
             // menu ## nao funciona ##
-            const contNavBar = document.getElementById('navBar');
-            config.navBar.forEach(menu => {
-                contNavBar.innerHTML = `
-                    <a href="#${menu.menuName}">${menu.menuName}</a>
+            const menu = config.navBar;
+            const containerNavBar = document.getElementById('navBar');
+            containerNavBar.innerHTML = `
+                <a href="#${menu.home}">${menu.home}</a>
+                <a href="#${menu.about}">${menu.about}</a>
+                <a href="#${menu.work}">${menu.work}</a>
+                <a href="#${menu.contact}">${menu.contact}</a>
                 `;
-            });
         })
         .catch(err => {
             console.error('Erro ao carregar o arquivo de configuração:', err);

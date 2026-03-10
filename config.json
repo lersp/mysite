@@ -1,56 +1,44 @@
 {
     "navBar": [
         {
-            "menuName": "home",
-            "menuLink": "#"
+            "menuhome": "home"
         },
         {
-            "menuName": "about",
-            "menuLink": "#",
+            "menuabout": "about",
             "menuDrop": [
                 {
-                    "dropName": "personal",
-                    "dropLink": "#"
+                    "dropName": "personal"
                 },
                 {
-                    "dropName": "education",
-                    "dropLink": "#"
+                    "dropName": "education"
                 },
                 {
-                    "dropName": "certification",
-                    "dropLink": "#"
+                    "dropName": "certification"
                 },
                 {
-                    "dropName": "hobbies",
-                    "dropLink": "#"
+                    "dropName": "hobbies"
                 }
             ]
         },
         {
-            "menuName": "work",
-            "menuLink": "#",
+            "menuwork": "work",
             "menuDrop": [
                 {
-                    "dropName": "experience",
-                    "dropLink": "#"
+                    "dropName": "experience"
                 },
                 {
-                    "dropName": "Skills",
-                    "dropLink": "#"
+                    "dropName": "Skills"
                 }
             ]
         },
         {
-            "menuName": "contact",
-            "menuLink": "#",
+            "menucontact": "contact",
             "menuDrop": [
                 {
-                    "dropName": "email",
-                    "dropLink": "#"
+                    "dropName": "email"
                 },
                 {
-                    "dropName": "social media",
-                    "dropLink": "#"
+                    "dropName": "social media"
                 }
             ]
         }
