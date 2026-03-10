@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('titulo').textContent = data.perfil.titulo;
             document.getElementById('resumo').textContent = data.perfil.resumo;
 
-        
+
             //projetos
             const containerProjetos = document.getElementById('lista-projetos');
             data.perfil.projetos.forEach(proj => {
