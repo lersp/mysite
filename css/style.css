@@ -34,7 +34,7 @@ body {
   position: fixed;
   top: 25px;
   left: 0;
-  width: 100%;
+  width: 75%;
   justify-content: center;
   z-index: 1000;
 }
