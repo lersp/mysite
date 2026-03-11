@@ -1,3 +1,4 @@
+@import url(bootstrap.min.css);
 :root {
 	--glass-bg: rgba(255, 255, 255, 0.1);
 	--glass-border: rgba(255, 255, 255, 0.2);
@@ -25,9 +26,8 @@ body {
 	left: 0;
 	width: 100%;
 	height: 3px;
-	background: linear-gradient(65deg,#E16D2F, #C39C1B, #94AD24, #59B819, #564599);
+	background: linear-gradient(65deg,--bs-blue,--bs-indigo,--bs-purple,);
 	z-index: 1000;
-
 }
 
 .navbar-container {
@@ -67,8 +67,8 @@ body {
 	transform: translateY(-2px);
 	color: var(--accent-color);
 }
-section {
 
+section {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 80px 20px;
@@ -76,7 +76,7 @@ section {
 	/* Configuração inicial para animação de fade-in */
 	opacity: 0;
 	transform: translateY(20px);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 /* Classe adicionada via JS para ativar a animação */
@@ -92,10 +92,31 @@ section.visible {
 	text-align: center;
 	height: 100vh;
 	min-height: 80vh;
+}
 
-	background-image: url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center fixed;
-	background-size: cover;
-	background-position: center;
+#about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 80vh;
+}
+#work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 80vh;
+}
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 80vh;
 }
 
 h1 {font-size: 3rem; margin-bottom: 0.5rem;}

@@ -74,11 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerProjetos = document.getElementById('lista-projetos');
         perfil.projetos.forEach(proj => {
             const div = document.createElement('div');
+            div.className = 'projeto-card';
             div.innerHTML = `
                 <h4>${proj.titulo}</h4>
                 <p>${proj.descricao}</p>
-                <p><strong>Tecnologias:</strong> ${proj.tecnologias.join(', ')}</p>
-                <a href="${proj.link}" target="_blank">Ver projeto</a>
+                <div class="tech-tags">
+                    ${proj.tecnologias.map(t => `<span class="badge">${t}</span>`).join('')}
+                </div>
+                <a href="${proj.link}" target="_blank" class="btn-projeto">Ver projeto</a>
             `;
             containerProjetos.appendChild(div);
         });
@@ -87,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const redes = perfil.contato;
         const contArea = document.getElementById('social-links');
         contArea.innerHTML = `
-            <a href="mailto:${redes.email}" target="_blank">Email</a> |
+            <a href="mailto:${redes.email}" target="_blank">Email</a> | 
             <a href="${redes.linkedin}" target="_blank">LinkedIn</a> | 
             <a href="${redes.github}" target="_blank">GitHub</a> | 
             <a href="${redes.youtube}" target="_blank">YouTube</a>
