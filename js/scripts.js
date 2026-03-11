@@ -74,11 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const containerProjetos = document.getElementById('lista-projetos');
         perfil.projetos.forEach(proj => {
             const div = document.createElement('div');
+            div.className = 'projeto-card';
             div.innerHTML = `
                 <h4>${proj.titulo}</h4>
                 <p>${proj.descricao}</p>
-                <p><strong>Tecnologias:</strong> ${proj.tecnologias.join(', ')}</p>
-                <a href="${proj.link}" target="_blank">Ver projeto</a>
+                <div class="tech-tags">
+                    ${proj.tecnologias.map(t => `<span class="badge">${t}</span>`).join('')}
+                </div>
+                <a href="${proj.link}" target="_blank" class="btn-projeto">Ver projeto</a>
             `;
             containerProjetos.appendChild(div);
         });
