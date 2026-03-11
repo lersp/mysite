@@ -7,14 +7,18 @@
 
     <title id="site-title">titulo</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <!-- Requided JavaScript -->
-    <script src="/js/scripts.js"></script>
 </head>
 
 <body>
+    <noscript>
+        <div style="text-align: center; padding: 40px; font-family: sans-serif;">
+            <h1>JavaScript é necessário</h1>
+            <p>Este site utiliza JavaScript para exibir o conteúdo. Por favor, habilite o JavaScript no seu navegador.</p>
+        </div>
+    </noscript>
     <!-- Inicio navBar -->
     <header>
         <div class="topbar-grad"></div>
@@ -25,12 +29,7 @@
     <!-- Fim navBar -->
     <!-- Inicio Conteudo -->
 
-    <section id="home" style="
-        min-height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      ">
+    <section id="home">
         <h1 id="nome"></h1>
         <h2 id="titulo"></h2>
         <p id="resumo"></p>
@@ -61,7 +60,7 @@
     </section>
     <!-- Fim Conteudo -->
 
-    <!-- Optional JavaScript -->
+    <!-- Optional JavaScript. -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -70,6 +69,8 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <!-- Your custom scripts -->
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>

@@ -1,54 +1,21 @@
 {
+    "title": "Lucas Pinto | WebPortifolio",
     "navBar": [
         {
-            "menuhome": "home"
+            "label": "Home",
+            "target": "home"
         },
         {
-            "menuabout": "about",
-            "menuDrop": [
-                {
-                    "dropName": "personal"
-                },
-                {
-                    "dropName": "education"
-                },
-                {
-                    "dropName": "certification"
-                },
-                {
-                    "dropName": "hobbies"
-                }
-            ]
+            "label": "About",
+            "target": "about"
         },
         {
-            "menuwork": "work",
-            "menuDrop": [
-                {
-                    "dropName": "experience"
-                },
-                {
-                    "dropName": "Skills"
-                }
-            ]
+            "label": "Work",
+            "target": "work"
         },
         {
-            "menucontact": "contact",
-            "menuDrop": [
-                {
-                    "dropName": "email"
-                },
-                {
-                    "dropName": "social media"
-                }
-            ]
-        }
-    ],
-    "projetos": [
-        {
-            "titulo": "Lucas Pinto | WebPortifolio",
-            "descricao": "Meu portifólio online onde coloco em prática meus conhecimentos em desenvolvimento web e apresento meu Curriculo",
-            "tecnologias": ["HTML 5", "CSS3", "JS", "Bootstrap"],
-            "link": "https://www.lersp.com.br"
+            "label": "Contact",
+            "target": "contact"
         }
     ]
 }
