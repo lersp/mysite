@@ -3,7 +3,7 @@
     "navBar": [
         {
             "label": "Home",
-            "target": "/"
+            "target": ""
         },
         {
             "label": "About",
