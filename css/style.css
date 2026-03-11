@@ -1,3 +1,4 @@
+@import url(bootstrap.min.css);
 :root {
 	--glass-bg: rgba(255, 255, 255, 0.1);
 	--glass-border: rgba(255, 255, 255, 0.2);
@@ -25,7 +26,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 3px;
-	background: linear-gradient(65deg,#E16D2F, #C39C1B, #94AD24, #59B819, #564599);
+	background: linear-gradient(65deg,--bs-blue,--bs-indigo,--bs-purple,);
 	z-index: 1000;
 
 }
