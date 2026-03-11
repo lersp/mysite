@@ -3,19 +3,19 @@
     "navBar": [
         {
             "label": "Home",
-            "target": "home"
+            "target": "/"
         },
         {
             "label": "About",
-            "target": "about"
+            "target": "#about"
         },
         {
             "label": "Work",
-            "target": "work"
+            "target": "#work"
         },
         {
             "label": "Contact",
-            "target": "contact"
+            "target": "#contact"
         }
     ]
 }
