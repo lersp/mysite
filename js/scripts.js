@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const menu = config.navBar;
             const containerNavBar = document.getElementById('navBar');
             containerNavBar.innerHTML = `
-                <a href="#${menu.home}">${menu.home}</a>
-                <a href="#${menu.about}">${menu.about}</a>
-                <a href="#${menu.work}">${menu.work}</a>
-                <a href="#${menu.contact}">${menu.contact}</a>
+                <a href="#${menu.menuhome}">${menu.menuhome}</a>
+                <a href="#${menu.menuabout}">${menu.menuabout}</a>
+                <a href="#${menu.menuwork}">${menu.menuwork}</a>
+                <a href="#${menu.menucontact}">${menu.menucontact}</a>
                 `;
         })
         .catch(err => {
