@@ -10,8 +10,6 @@ html{
 	scroll-padding-top: 100px;
 }
 body {
-	background-image: url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center fixed;
-	background-size: 1920px 720px;
 	margin: 0;
 	padding: 0;
 	font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
@@ -69,6 +67,9 @@ body {
 	color: var(--accent-color);
 }
 section {
+	background-image: url(/imagens/Identity-Access-Management.jpg.webp) no-repeat center fixed;
+	background-size: cover;
+	background-position: center;
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 80px 20px;
