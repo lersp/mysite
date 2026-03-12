@@ -9,3 +9,33 @@ html {
 body {
     margin: 0;
 }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display:block
+}
+audio, canvas, progress, video {
+    vertical-align: baseline;
+    display:inline-block
+}
+a {
+    background-color:#0000
+}
+a:active, a:hover {
+    outline:0
+}
+b, strong {
+    font-weight:700
+}
+svg:not(:root) {
+    overflow:hidden
+}
+img {
+    border:0
+}
+hr {
+    box-sizing: content-box;
+    height:0
+}
+code, kbd, pre, samp {
+    font-family: monospace;
+    font-size:1em
+}
