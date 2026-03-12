@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -38,4 +36,7 @@ hr {
 code, kbd, pre, samp {
     font-family: monospace;
     font-size:1em
+}
+* {
+    box-sizing: border-box;
 }
