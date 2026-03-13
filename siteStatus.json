@@ -2,5 +2,6 @@
   "schemaVersion": 1,
   "label": "website status",
   "message": "maintenance",
-  "color": "orange"
+  "color": "orange",
+  "isError": true
 }
