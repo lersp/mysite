@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
   "label": "website status",
-  "message": "maintenance",
-  "color": "orange"
+  "message": "up",
+  "color": "green"
 }
