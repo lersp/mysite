@@ -3,5 +3,5 @@
   "label": "website status",
   "message": "maintenance",
   "color": "orange",
-  "isError": true
+  "isError": false
 }
