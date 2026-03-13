@@ -21,12 +21,14 @@ jobs:
 
       - name: Setup Maintenance
         if: ${{github.event.inputs.mode == 'maintenance' }}
-        run: cp maintenance.html index.html
-        run: cp src/siteStatusMaint.json siteStatus.json
+        run: |
+          cp maintenance.html index.html
+          cp src/siteStatusMaint.json siteStatus.json
       - name: Setup Live Site
         if: ${{github.event.inputs.mode == 'live' }}
-        run: cp src/index.html index.html
-        run: cp src/siteStatusUp.json siteStatus.json
+        run: |
+          cp src/index.html index.html
+          cp src/siteStatusUp.json siteStatus.json
       - name: Commit and Push
         run: |
           git config --global user.name "GitHub Action"
