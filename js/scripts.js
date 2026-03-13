@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
       // Gera o menu de navegação dinamicamente, iterando sobre o array.
       const navBarContainer = document.getElementById("navBar");
       navBarContainer.innerHTML = config.navBar
-        .map((item) => `<a href="${item.target}">${item.label}</a>`)
+        .map((item) => `
+            <li class="nav-item">
+              <a href="${item.target}" class="nav-link">${item.label}</a>
+            </li>`)
         .join("");
 
       // --- Dados do data.json ---
