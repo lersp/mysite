@@ -63,7 +63,7 @@ section {
   max-width: 900px;
   margin: 0 auto;
   padding: 80px 20px;
-  min-height: 60vh;
+  min-height: 200vh;
   /* Configuração inicial para animação de fade-in */
   opacity: 0;
   transform: translateY(20px);
