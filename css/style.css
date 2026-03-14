@@ -172,6 +172,11 @@ section.visible {
   height: 100vh;
   min-height: 80vh;
 }
+
+#work.job-title{
+  text-transform: uppercase;
+}
+
 #work.projeto-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);
