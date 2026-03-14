@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("data.json").then((response) => response.json()),
   ])
     .then(([config, data]) => {
-      // --- Dados do config.json ---
+      // ####### Inicio carregar dados do config.json #######
 
       // Define o título do site.
       document.getElementById("site-title").textContent = config.title;
@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="${item.target}" class="nav-link">${item.label}</a>
             </li>`)
         .join("");
-
-      // --- Dados do data.json ---
+      // ####### fim dados config.json #######
+      // ####### Inicio carregar dados do data.json #######
       const { perfil } = data;
 
       // Seção #home
@@ -28,11 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("resumo").textContent = perfil.resumo;
 
       // Seção #about
+      // Pessoal & hobbies
       const hobbiesList = document.getElementById("lista-personal");
       hobbiesList.innerHTML = perfil.hobbies
         .map((hobby) => `<li>${hobby}</li>`)
         .join("");
 
+      // Tecnologia & Habilidades
       const techList = document.getElementById("lista-tech");
       const allSkills = [
         ...perfil.competencias.especialidades,
@@ -42,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
       techList.innerHTML = uniqueSkills
         .map((skill) => `<li>${skill}</li>`)
         .join("");
-
+      
+      // Formação e certificações
       const studyList = document.getElementById("lista-study");
       const formacaoHtml = perfil.formacao
         .map(

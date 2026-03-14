@@ -3,12 +3,15 @@
   --glass-border: rgba(255, 255, 255, 0.2);
   --text-primary: #ffffff;
   --text-secondary: #cbd5e0;
-  --accent-color: #63b3ed; /* Um tom de azul para links e destaque */
+  --accent-color: #63b3ed;
+  /* Um tom de azul para links e destaque */
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
+
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   background: linear-gradient(45deg, #0f172a 0%, #1e293b 100%);
@@ -18,6 +21,28 @@ body {
   padding-top: 20px;
 }
 
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-weight: 300;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+noscript {
+  font-size: 1rem;
+  text-align: center; 
+  padding: 40px; 
+  font-family: sans-serif
+}
+
 .topbar-grad {
   position: fixed;
   z-index: 1000;
@@ -25,7 +50,13 @@ body {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(65deg, #5ab6be, #7facab, #a89c86, #e5a565, #f4bc68, #eb893e);
+  background: linear-gradient(65deg,
+      #5ab6be,
+      #7facab,
+      #a89c86,
+      #e5a565,
+      #f4bc68,
+      #eb893e);
 }
 
 .navbar-liquid {
@@ -46,25 +77,41 @@ body {
 }
 
 .navbar-liquid:hover {
-    background: rgba(255, 255, 255, 0.15);
-    width: 92%;
+  background: rgba(255, 255, 255, 0.15);
+  width: 92%;
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
-    font-weight: 500;
-    padding: 0.5rem 1.5rem !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem !important;
 }
 
 .nav-link:hover {
-    color:#fff !important
+  color: #fff !important;
+}
+
+.btn-tgl:active,
+.btn-tgl:focus,
+.btn-tgl:focus-visible,
+.btn-tgl:focus-within,
+.btn-tgl:visited,
+.btn-tgl:hover {
+  color: transparent;
+  outline: 0 transparent !important;
+  border-width: 0px !important;
+  -webkit-outline-style: none !important;
+  -moz-outline-style: none !important;
+  outline-style: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 section {
   max-width: 900px;
   margin: 0 auto;
   padding: 80px 20px;
-  min-height: 60vh;
+  min-height: 100vh;
+
   /* Configuração inicial para animação de fade-in */
   opacity: 0;
   transform: translateY(20px);
@@ -73,11 +120,14 @@ section {
     transform 0.8s ease-out;
 }
 
+
+
 /* Classe adicionada via JS para ativar a animação */
 section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 #home {
   display: flex;
   flex-direction: column;
@@ -96,6 +146,24 @@ section.visible {
   height: 100vh;
   min-height: 80vh;
 }
+
+#lista-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#lista-tech li {
+  font-size: 1rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 5px 15px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
 #work {
   display: flex;
   flex-direction: column;
@@ -104,6 +172,20 @@ section.visible {
   height: 100vh;
   min-height: 80vh;
 }
+#work.projeto-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+#work.projeto-card:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -113,43 +195,9 @@ section.visible {
   min-height: 80vh;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-h2 {
-  font-weight: 300;
-  color: var(--accent-color);
-  margin-bottom: 1.5rem;
-}
 
-#lista-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-}
-#lista-tech li {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  padding: 5px 15px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-}
-.projeto-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--glass-border);
-  padding: 1.5rem;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
 
-.projeto-card:hover {
-  transform: scale(1.02);
-  background: rgba(255, 255, 255, 0.05);
-}
+
 
 /* Links de Contato */
 #social-links a {
