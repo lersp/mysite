@@ -1,3 +1,15 @@
+/*
+Destaques da Implementação:
+backdrop-filter: blur(15px): É o que cria a sensação de vidro fosco, desfocando o conteúdo que passa atrás da barra.
+
+border-radius: 50px: Dá o formato de "pílula", essencial para o visual moderno e fluido.
+
+transform: translateX(-50%): Garante que a navbar fique perfeitamente centralizada, independente do tamanho da tela.
+
+max-width: Impede que a barra fique excessivamente larga em monitores UltraWide, mantendo a elegância.
+
+Dica técnica: Se você quiser que o efeito seja ainda mais "orgânico", pode adicionar um leve box-shadow interno (inset) para simular a espessura do vidro nas bordas.
+*/
 body {
     background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
     height: 200vh;
