@@ -38,8 +38,8 @@ h2 {
 
 noscript {
   font-size: 1rem;
-  text-align: center; 
-  padding: 40px; 
+  text-align: center;
+  padding: 40px;
   font-family: sans-serif
 }
 
@@ -120,14 +120,13 @@ section {
     transform 0.8s ease-out;
 }
 
-
-
 /* Classe adicionada via JS para ativar a animação */
 section.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Pagina index */
 #home {
   display: flex;
   flex-direction: column;
@@ -138,6 +137,7 @@ section.visible {
   min-height: 80vh;
 }
 
+/* Pagina sobre */
 #about {
   display: flex;
   flex-direction: column;
@@ -164,6 +164,7 @@ section.visible {
   font-size: 0.85rem;
 }
 
+/* Pagina trabalho */
 #work {
   display: flex;
   flex-direction: column;
@@ -173,11 +174,20 @@ section.visible {
   min-height: 80vh;
 }
 
-#work.job-title{
+#work p {
+  font-size: 1rem;
+}
+
+.job-title {
   text-transform: uppercase;
 }
 
-#work.projeto-card {
+.job-title-junction {
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.projeto-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--glass-border);
   padding: 1.5rem;
@@ -186,11 +196,13 @@ section.visible {
   transition: transform 0.3s ease;
 }
 
-#work.projeto-card:hover {
+.projeto-card:hover {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.05);
 }
 
+
+/* Pagina Contatos */
 #contact {
   display: flex;
   flex-direction: column;
@@ -199,10 +211,6 @@ section.visible {
   height: 100vh;
   min-height: 80vh;
 }
-
-
-
-
 
 /* Links de Contato */
 #social-links a {

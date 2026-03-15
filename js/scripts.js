@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const expList = document.getElementById("lista-exp");
       perfil.experiencia.forEach((exp) => {
         const expDiv = document.createElement("div");
-        let content = `<h4 class="job-title">${exp.cargo || ""} na ${exp.empresa}</h4>`;
+        let content = `<h4 class="job-title">${exp.cargo || ""}<span class="job-title-junction"> na </span> ${exp.empresa}</h4>`;
 
         if (exp.periodo) {
           content += `<p><em>${exp.periodo}</em></p>`;
@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
           content += "<ul>";
           exp.historico.forEach((h) => {
             content += `
-                        <li class="job-title">
-                            <h5>${h.cargo} (${h.periodo})</h5>
+                        <li>
+                            <h5 class="job-title">${h.cargo} <span class="job-title-junction">(${h.periodo})</span></h5>
                             ${h.descricao ? `<p>${h.descricao}</p>` : ""}
                         </li>
                     `;
