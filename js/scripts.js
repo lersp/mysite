@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const redes = perfil.contato;
       const contArea = document.getElementById("social-links");
       contArea.innerHTML = `
-            <a href="mailto:${redes.email}" target="_blank">Email</a> | 
-            <a href="${redes.linkedin}" target="_blank">LinkedIn</a> | 
-            <a href="${redes.github}" target="_blank">GitHub</a> | 
+            <a href="mailto:${redes.email}" target="_blank"><span><i class="fa-brands fa-youtube">Email</i></span></a> | 
+            <a href="${redes.linkedin}" target="_blank"><span><i class="fa-brands fa-youtube">LinkedIn</i></span></a> | 
+            <a href="${redes.github}" target="_blank"><span><i class="fa-brands fa-youtube">GitHub</i></span></a> | 
             <a href="${redes.youtube}" target="_blank">YouTube</a>
         `;
 
