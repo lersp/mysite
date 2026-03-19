@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
 
       // Seção #work 
+      /*
       const expList = document.getElementById("lista-exp");
       perfil.experiencia.forEach((exp) => {
         const expDiv = document.createElement("div");
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         containerProjetos.appendChild(div);
       });
+      */
 
       // Seção #contact
       const redes = perfil.contato;
