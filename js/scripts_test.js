@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Define o título do site.
       document.getElementById("site-title").textContent = config.title;
-
+      
       // Gera o menu de navegação dinamicamente, iterando sobre o array.
-      const navBarContainer = document.getElementById("navBar");
+      const navBarContainer = document.getElementById("navBarDynItem");
       navBarContainer.innerHTML = config.navBar
         .map((item) => `
             <li class="nav-item">
@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
       // ####### fim dados config.json #######
       // ####### Inicio carregar dados do data.json #######
+      /*
       const { perfil } = data;
-
+      
       // Seção #home
       document.getElementById("nome").textContent = perfil.nome;
       document.getElementById("titulo").textContent = perfil.titulo;
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
       
       // Formação e certificações
+      
       const studyList = document.getElementById("lista-study");
       const formacaoHtml = perfil.formacao
         .map(
@@ -64,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
 
       // Seção #work 
-      /*
+      
       const expList = document.getElementById("lista-exp");
       perfil.experiencia.forEach((exp) => {
         const expDiv = document.createElement("div");
@@ -108,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         containerProjetos.appendChild(div);
       });
-      */
+      
 
       // Seção #contact
       const redes = perfil.contato;
@@ -142,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Inicia a observação para cada seção
       sections.forEach((section) => {
         observer.observe(section);
-      });
+      });*/
     })
     .catch((error) => {
       console.error("Erro ao carregar os arquivos de dados:", error);
