@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-  <!--link rel="stylesheet" type="text/css" href="./css/style_test.css" /-->
+  <link rel="stylesheet" type="text/css" href="./css/style_test.css" />
 </head>
 
 <body>
@@ -25,10 +25,14 @@
   <!-- Inicio navBar -->
   <header class="">
     <div class="topbar-grad"></div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-liquid">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <image src="images/coffeescript.svg" alt="Avatar Logo" style="width:40px;" class="rounded-pill" />
+        <a class="navbar-brand text-white fw-bold ms-3" href="javascript:void(0)">
+          <div>
+            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <use href="images/coffeescript.svg"></use>
+            </svg>
+          </div>
         </a>
         <button class="navbar-toggler border-0 btn-tgl" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav">
@@ -38,7 +42,7 @@
           <ul class="navbar-nav" id="navBarDynItem"><!--dinamyc added-->
           </ul>
           <ul class="navbar-nav d-flex">
-            <li class="nav-item"><a class="btn btn-secondary bg-dark" href="javascript:void(0)">Download the CV</a></li>
+            <li class="nav-item"><a class="btn btn-secondary btn-resume" href="javascript:void(0)">Resume.PDF</a></li>
           </ul>
         </div>
       </div>

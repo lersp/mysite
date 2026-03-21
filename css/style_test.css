@@ -7,6 +7,10 @@
   /* Um tom de azul para links e destaque*/
 }
 
+use {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 200px;
@@ -78,7 +82,7 @@ noscript {
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   border: 1px solid var(--glass-border);
   border-radius: 50px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) inset;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.37) inset;
 }
 
 .navbar-liquid:hover {
@@ -94,6 +98,18 @@ noscript {
 
 .nav-link:hover {
   color: #fff !important;
+}
+
+.btn-resume {
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+}
+.btn-resume:hover {
+background: rgba(255, 255, 255, 0.15);
 }
 
 .btn-tgl:active,
@@ -114,8 +130,9 @@ noscript {
 section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 200px 20px;
   min-height: 100vh;
+  border: 1px solid black;
 }
 
 /*
@@ -128,14 +145,14 @@ section {
     transform 0.8s ease-out;
 }
 */
-/* Classe adicionada via JS para ativar a animação */
+/* Classe adicionada via JS para ativar a animação 
 
 section.visible {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* Pagina index */
+*/
+/* Pagina index 
 
 #home {
   display: flex;
@@ -146,8 +163,8 @@ section.visible {
   height: 50vh;
   min-height: 80vh;
 }
-
-/* Pagina sobre */
+*/
+/* Pagina sobre 
 
 #about {
   display: flex;
@@ -174,8 +191,8 @@ section.visible {
   border-radius: 8px;
   font-size: 0.85rem;
 }
-
-/* Pagina trabalho */
+*/
+/* Pagina trabalho 
 
 #work {
   display: flex;
@@ -213,8 +230,8 @@ section.visible {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.05);
 }
-
-/* Pagina Contatos */
+*/
+/* Pagina Contatos 
 
 #contact {
   display: flex;
@@ -224,12 +241,12 @@ section.visible {
   height: 100vh;
   min-height: 80vh;
 }
-
-/* Links de Contato */
+*/
+/* Links de Contato 
 
 #social-links a {
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 15px;
   font-weight: bold;
-}
+}*/
