@@ -22,15 +22,34 @@
       </p>
     </div>
   </noscript>
+  <!--  SVG Filtering for glass -->
+  <svg xmlns="http://www.w3.org/2000/svg" role="presentation" style="display: none">
+    <filter id="glass distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="turbulence" />
+      <feComponentTransfer in="turbulence" result="mapped">
+        <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+        <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+        <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+      </feComponentTransfer>
+      <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+      <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100"
+        lighting-color="white" result="specLight">
+        <fePointLight x="-200" y="-200" z="300" />
+      </feSpecularLighting>
+      <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
+      <feDisplacementMap in="SourceGraphic" in2="softMap" scale="200" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
   <!-- Inicio navBar -->
   <header class="">
     <div class="topbar-grad"></div>
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-liquid">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-liquid liquid-glass">
       <div class="container-fluid">
         <a class="navbar-brand text-white fw-bold ms-3" href="javascript:void(0)">
           <div>
             <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-              <use href="images/coffeescript.svg"></use>
+              <use href="./images/coffeescript.svg"></use>
             </svg>
           </div>
         </a>
@@ -51,153 +70,158 @@
   <!-- Fim navBar -->
   <!-- Inicio Conteudo -->
   <!-- ## Home Section ## -->
-  <section id="home" class="visible">
-    <div class="selfIntro">
-      <h1 id="nome">Lucas Pinto</h1>
-      <h2 id="titulo">Identity Management Operation Specialist</h2>
-      <p id="resumo">Mais de vinte anos de experiência em suporte técnico de TI, com dois anos dedicados à gestão de
-        negócios e projetos e dois anos ao treinamento de pessoas.</p>
-    </div>
-  </section>
-
-  <!-- ## About Section ## -->
-  <section id="about">
-    <div class="personalHobbies">
-      <h3>Personal &amp; Hobbies:</h3>
-      <ul id="lista-personal">
-        <li>Tocar Contrabaixo</li>
-        <li>Jogar Voleyball</li>
-        <li>Jogar VideoGame</li>
-        <li>Academia</li>
-        <li>Viajar em família</li>
-      </ul>
-    </div>
-    <div class="techSkills">
-      <h3>Tecnologia &amp; Skills:</h3>
-      <ul id="lista-tech">
-        <li>Gerenciamento de Identidade (IAM)</li>
-        <li>Power Platform (App e Flow)</li>
-        <li>Administração de Servidores</li>
-        <li>Splunk</li>
-        <li>Spl</li>
-        <li>SQL Server Management Studio</li>
-        <li>HTML 5</li>
-        <li>CSS 3</li>
-        <li>SQL</li>
-        <li>IAM</li>
-        <li>Windows Server</li>
-        <li>Powershell</li>
-        <li>MacOs</li>
-        <li>JS</li>
-        <li>Power Platform</li>
-      </ul>
-    </div>
-    <div class="educationCertificates">
-      <h3>Education &amp; Certificates:</h3>
-      <ul id="lista-study">
-        <li><b>Pós-graduação em Tecnologia da Informação</b> - Faculdade Facuminas Ltda (Previsão: Janeiro 2026)</li>
-        <li><b>Bacharelado em Administração de Empresas</b> - Centro Universitário Sant'Anna (2007 - 2011)</li>
-        <li><b>Técnico em Programação de Computadores</b> - FIEC/CEPIN (2002 - 2003)</li>
-        <li>Microsoft Certified: Power Platform Fundamentals</li>
-        <li>Fluência Duolingo em Francês: Intermediário</li>
-      </ul>
-      <h3>Idiomas:</h3>
-      <ul id="lista-idiom">
-        <li><b>Português:</b> Nativo ou Bilíngue</li>
-        <li><b>Inglês:</b> Nativo ou Bilíngue</li>
-        <li><b>Francês:</b> Intermediário (estimativa) / Proficiência Limitada</li>
-        <li><b>Espanhol:</b> Proficiência Limitada</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ## Work Section ## -->
-  <section id="work">
-    <div class="experiences">
-      <h3>Experiences:</h3>
-      <div id="lista-exp">
-        <div class="currentJob">
-          <h4 class="job-title">Identity Management Operation Specialist<span class="job-title-junction"> na </span>
-            Bosch
-            Digital</h4>
-          <p><em>Outubro 2024 - Presente</em></p>
-          <p>Responsável pela operação e suporte de aplicações IAM, monitoramento de desempenho e garantia de
-            conformidade.</p>
-        </div>
-        <div class="pastJob">
-          <h4 class="job-title"><span class="job-title-junction"> na </span><span class="company-name">Bosch</span></h4>
-          <ul>
-            <li>
-              <h5 class="job-title">Analista de Suporte <span class="job-title-junction">(Janeiro 2023 - Outubro
-                  2024)</span></h5>
-              <p>Representante de suporte do programa IDE para a América Latina.</p>
-            </li>
-
-            <li>
-              <h5 class="job-title">Analista de Suporte Júnior <span class="job-title-junction">(Janeiro 2021 - Janeiro
-                  2023)</span></h5>
-              <p>Atuação com consultoria técnica, criação de fluxos em Power Platform e suporte regional.</p>
-            </li>
-
-            <li>
-              <h5 class="job-title">Técnico Júnior de TI <span class="job-title-junction">(Abril 2019 - Janeiro
-                  2021)</span></h5>
-
-            </li>
-
-            <li>
-              <h5 class="job-title">Assistente Sênior de Suporte <span class="job-title-junction">(Novembro 2017 - Abril
-                  2019)</span></h5>
-
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="job-title">Analista de Suporte<span class="job-title-junction"> na </span><span
-              class="company-name">Stefanini</span></h4>
-          <p><em>Março 2013 - Dezembro 2016</em></p>
-          <p>Gestão de incidentes, suporte bilíngue e atendimento VIP.</p>
-        </div>
-        <div>
-          <h4 class="job-title">Proprietário<span class="job-title-junction"> na </span><span
-              class="company-name">InfoCares</span></h4>
-          <p><em>Janeiro 2011 - Fevereiro 2014</em></p>
-          <p>Gestão de clientes, processos administrativos e serviços de TI.</p>
-        </div>
-        <div>
-          <h4 class="job-title">Técnico de Informática<span class="job-title-junction"> na </span><span
-              class="company-name"></span>Factorway Fomento
-            Mercantil Ltda</h4>
-          <p><em>Janeiro 2006 - Março 2010</em></p>
-          <p>Administração de infraestrutura de TI e servidores.</p>
-        </div>
+  <div class="pageWrapper">
+    <section id="home" class="visible">
+      <div class="selfIntro">
+        <h1 id="nome">Lucas Pinto</h1>
+        <h2 id="titulo">Identity Management Operation Specialist</h2>
+        <p id="resumo">Mais de vinte anos de experiência em suporte técnico de TI, com dois anos dedicados à gestão de
+          negócios e projetos e dois anos ao treinamento de pessoas.</p>
       </div>
-    </div>
-    <div class="projects">
-      <h3>Projeto:</h3>
-      <div id="lista-projetos">
-        <div class="projeto-card">
-          <h4>Lucas Pinto | WebPortifolio</h4>
-          <p>Meu portifólio online onde coloco em prática meus conhecimentos em desenvolvimento web e apresento meu
-            Curriculo</p>
-          <div class="tech-tags">
-            <span class="badge">HTML 5</span><span class="badge">CSS3</span><span class="badge">JS</span><span
-              class="badge">Bootstrap</span>
+    </section>
+
+    <!-- ## About Section ## -->
+    <section id="about">
+      <div class="personalHobbies">
+        <h3>Personal &amp; Hobbies:</h3>
+        <ul id="lista-personal">
+          <li>Tocar Contrabaixo</li>
+          <li>Jogar Voleyball</li>
+          <li>Jogar VideoGame</li>
+          <li>Academia</li>
+          <li>Viajar em família</li>
+        </ul>
+      </div>
+      <div class="techSkills">
+        <h3>Tecnologia &amp; Skills:</h3>
+        <ul id="lista-tech">
+          <li>Gerenciamento de Identidade (IAM)</li>
+          <li>Power Platform (App e Flow)</li>
+          <li>Administração de Servidores</li>
+          <li>Splunk</li>
+          <li>Spl</li>
+          <li>SQL Server Management Studio</li>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>SQL</li>
+          <li>IAM</li>
+          <li>Windows Server</li>
+          <li>Powershell</li>
+          <li>MacOs</li>
+          <li>JS</li>
+          <li>Power Platform</li>
+        </ul>
+      </div>
+      <div class="educationCertificates">
+        <h3>Education &amp; Certificates:</h3>
+        <ul id="lista-study">
+          <li><b>Pós-graduação em Tecnologia da Informação</b> - Faculdade Facuminas Ltda (Previsão: Janeiro 2026)</li>
+          <li><b>Bacharelado em Administração de Empresas</b> - Centro Universitário Sant'Anna (2007 - 2011)</li>
+          <li><b>Técnico em Programação de Computadores</b> - FIEC/CEPIN (2002 - 2003)</li>
+          <li>Microsoft Certified: Power Platform Fundamentals</li>
+          <li>Fluência Duolingo em Francês: Intermediário</li>
+        </ul>
+        <h3>Idiomas:</h3>
+        <ul id="lista-idiom">
+          <li><b>Português:</b> Nativo ou Bilíngue</li>
+          <li><b>Inglês:</b> Nativo ou Bilíngue</li>
+          <li><b>Francês:</b> Intermediário (estimativa) / Proficiência Limitada</li>
+          <li><b>Espanhol:</b> Proficiência Limitada</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ## Work Section ## -->
+    <section id="work">
+      <div class="experiences">
+        <h3>Experiences:</h3>
+        <div id="lista-exp">
+          <div class="currentJob">
+            <h4 class="job-title">Identity Management Operation Specialist<span class="job-title-junction"> na </span>
+              Bosch
+              Digital</h4>
+            <p><em>Outubro 2024 - Presente</em></p>
+            <p>Responsável pela operação e suporte de aplicações IAM, monitoramento de desempenho e garantia de
+              conformidade.</p>
           </div>
-          <a href="https://www.lersp.com.br" target="_blank" class="btn-projeto">Ver projeto</a>
+          <div class="pastJob">
+            <h4 class="job-title"><span class="job-title-junction"> na </span><span class="company-name">Bosch</span>
+            </h4>
+            <ul>
+              <li>
+                <h5 class="job-title">Analista de Suporte <span class="job-title-junction">(Janeiro 2023 - Outubro
+                    2024)</span></h5>
+                <p>Representante de suporte do programa IDE para a América Latina.</p>
+              </li>
+
+              <li>
+                <h5 class="job-title">Analista de Suporte Júnior <span class="job-title-junction">(Janeiro 2021 -
+                    Janeiro
+                    2023)</span></h5>
+                <p>Atuação com consultoria técnica, criação de fluxos em Power Platform e suporte regional.</p>
+              </li>
+
+              <li>
+                <h5 class="job-title">Técnico Júnior de TI <span class="job-title-junction">(Abril 2019 - Janeiro
+                    2021)</span></h5>
+
+              </li>
+
+              <li>
+                <h5 class="job-title">Assistente Sênior de Suporte <span class="job-title-junction">(Novembro 2017 -
+                    Abril
+                    2019)</span></h5>
+
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="job-title">Analista de Suporte<span class="job-title-junction"> na </span><span
+                class="company-name">Stefanini</span></h4>
+            <p><em>Março 2013 - Dezembro 2016</em></p>
+            <p>Gestão de incidentes, suporte bilíngue e atendimento VIP.</p>
+          </div>
+          <div>
+            <h4 class="job-title">Proprietário<span class="job-title-junction"> na </span><span
+                class="company-name">InfoCares</span></h4>
+            <p><em>Janeiro 2011 - Fevereiro 2014</em></p>
+            <p>Gestão de clientes, processos administrativos e serviços de TI.</p>
+          </div>
+          <div>
+            <h4 class="job-title">Técnico de Informática<span class="job-title-junction"> na </span><span
+                class="company-name"></span>Factorway Fomento
+              Mercantil Ltda</h4>
+            <p><em>Janeiro 2006 - Março 2010</em></p>
+            <p>Administração de infraestrutura de TI e servidores.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ## Contact Section ## -->
-  <section id="contact">
-    <div class="contactWrapper">
-      <h3>Contato</h3>
-      <p>Interessado em IAM Ops ou Power Platform? Vamos conversar!</p>
-      <div id="social-links">
+      <div class="projects">
+        <h3>Projeto:</h3>
+        <div id="lista-projetos">
+          <div class="projeto-card">
+            <h4>Lucas Pinto | WebPortifolio</h4>
+            <p>Meu portifólio online onde coloco em prática meus conhecimentos em desenvolvimento web e apresento meu
+              Curriculo</p>
+            <div class="tech-tags">
+              <span class="badge">HTML 5</span><span class="badge">CSS3</span><span class="badge">JS</span><span
+                class="badge">Bootstrap</span>
+            </div>
+            <a href="https://www.lersp.com.br" target="_blank" class="btn-projeto">Ver projeto</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- ## Contact Section ## -->
+    <section id="contact">
+      <div class="contactWrapper">
+        <h3>Contato</h3>
+        <p>Interessado em IAM Ops ou Power Platform? Vamos conversar!</p>
+        <div id="social-links">
+        </div>
+      </div>
+    </section>
+  </div>
   <!-- Fim Conteudo -->
 
   <!-- Optional JavaScript. -->
