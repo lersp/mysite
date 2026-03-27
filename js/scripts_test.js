@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .map((item) => `
             <li class="nav-item">
               <a href="${item.target}" class="nav-link">
-                <svg class="nav-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg>
-                  <use href="${item.icon}"></use>
-                </svg>
+                ${item.icon}
                 <span>${item.label}</span>
               </a>
             </li>`)

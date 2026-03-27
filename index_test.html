@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title id="site-title">titulo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="./css/style_test.css" />
 </head>
 
-<body>
+<body class="bg-dark">
   <noscript>
     <div>
       <h1>JavaScript é necessário</h1>
@@ -23,16 +29,12 @@
     </div>
   </noscript>
   <!-- Inicio navBar -->
-  <header class="site-header">
+  <header class="container-sm">
     <div class="topbar-grad"></div>
-    <nav class="navbar-container navbar navbar-expand-md" aria-label="navigation">
+    <nav class="navbar-container navbar navbar-expand-sm" aria-label="navigation">
       <div class="container-fluid">
         <a class="navbar-brand ms-3" href="https://www.lersp.com.br" target="_blank">
-          <div class="logo-icon">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <use href="./images/coffeescript.svg"></use>
-            </svg>
-          </div>
+          <div class=""><i class="bi bi-cup-hot-fill text"></i></div>
           <span class="brand-text">LERSP</span>
         </a>
         <button class="navbar-toggler border-0 btn-tgl" type="button" data-bs-toggle="collapse"
@@ -46,14 +48,12 @@
               <!--dinamyc added-->
             </div>
             <!--Download the Resume function-->
-            <li class="nav-item-resume">
+            <!--li class="nav-item">
               <a class="btn-resume" href="javascript:void(0)">
-                <svg class="nav-icon">
-                  <use href="./images/file-download-svgrepo-com.svg"></use>
-                </svg>
+                <i class="bi bi-filetype-pdf"></i>
                 <span>Resume.PDF</span>
               </a>
-            </li>
+            </li-->
           </ul>
         </div>
       </div>
@@ -229,8 +229,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
   <!-- custom scripts -->

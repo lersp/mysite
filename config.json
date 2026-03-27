@@ -3,24 +3,29 @@
     "navBar": [
         {
             "label": "Home",
-            "icon": "./images/home-svgrepo-com.svg",
+            "icon": "<i class='bi bi-house'></i>",
             "target": ""
 
         },
         {
             "label": "About",
-            "icon": "./images/info-svgrepo-com.svg",
+            "icon": "<i class='bi bi-file-person'></i>",
             "target": "#about"
         },
         {
             "label": "Work",
-            "icon": "./images/desktop-svgrepo-com.svg",
+            "icon": "<i class='bi bi-person-workspace'></i>",
             "target": "#work"
         },
         {
             "label": "Contact",
-            "icon": "./images/mail-send-svgrepo-com.svg",
+            "icon": "<i class='bi bi-envelope-at'></i>",
             "target": "#contact"
+        },
+        {
+            "label": "Resume.PDF",
+            "icon": "<i class='bi bi-filetype-pdf'></i>",
+            "target": "#download"
         }
     ]
 }
