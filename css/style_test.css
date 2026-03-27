@@ -22,3 +22,9 @@
   height: 3px;
   background: var(--top-grad);
 }
+
+.pageWrapper {
+  top: 10vh;
+  position: relative;
+}
+
