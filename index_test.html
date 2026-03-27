@@ -22,46 +22,38 @@
       </p>
     </div>
   </noscript>
-  <!--  SVG Filtering for glass -->
-  <svg xmlns="http://www.w3.org/2000/svg" role="presentation" style="display: none">
-    <filter id="glass distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
-      <feTurbulence type="fractalNoise" baseFrequency="0.001 0.005" numOctaves="1" seed="17" result="turbulence" />
-      <feComponentTransfer in="turbulence" result="mapped">
-        <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
-        <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
-        <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
-      </feComponentTransfer>
-      <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
-      <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100"
-        lighting-color="white" result="specLight">
-        <fePointLight x="-200" y="-200" z="300" />
-      </feSpecularLighting>
-      <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
-      <feDisplacementMap in="SourceGraphic" in2="softMap" scale="200" xChannelSelector="R" yChannelSelector="G" />
-    </filter>
-  </svg>
-
   <!-- Inicio navBar -->
-  <header class="">
+  <header class="site-header">
     <div class="topbar-grad"></div>
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-liquid liquid-glass">
+    <nav class="navbar-container navbar navbar-expand-md" aria-label="navigation">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold ms-3" href="javascript:void(0)">
-          <div>
-            <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+        <a class="navbar-brand ms-3" href="https://www.lersp.com.br" target="_blank">
+          <div class="logo-icon">
+            <!--svg xmlns="http://www.w3.org/2000/svg">
               <use href="./images/coffeescript.svg"></use>
-            </svg>
+            </svg-->
           </div>
+          <span class="brand-text">LERSP</span>
         </a>
         <button class="navbar-toggler border-0 btn-tgl" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav">
+          data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav" id="navBarDynItem"><!--dinamyc added-->
-          </ul>
-          <ul class="navbar-nav d-flex">
-            <li class="nav-item"><a class="btn btn-secondary btn-resume" href="javascript:void(0)">Resume.PDF</a></li>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
+          <ul class="navbar-nav">
+            <div class="navbar-nav" id="navBarDynItem">
+              <!--dinamyc added-->
+            </div>
+            <!--Download the Resume function-->
+            <li class="nav-item-resume">
+              <a class="btn-resume" href="javascript:void(0)">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                  <use href="./images/file-download-svgrepo-com.svg"></use>
+                </svg>
+                <span>Resume.PDF</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -70,7 +62,7 @@
   <!-- Fim navBar -->
   <!-- Inicio Conteudo -->
   <!-- ## Home Section ## -->
-  <div class="pageWrapper">
+  <main class="pageWrapper">
     <section id="home" class="visible">
       <div class="selfIntro">
         <h1 id="nome">Lucas Pinto</h1>
@@ -123,10 +115,10 @@
         </ul>
         <h3>Idiomas:</h3>
         <ul id="lista-idiom">
-          <li><b>Português:</b> Nativo ou Bilíngue</li>
-          <li><b>Inglês:</b> Nativo ou Bilíngue</li>
-          <li><b>Francês:</b> Intermediário (estimativa) / Proficiência Limitada</li>
-          <li><b>Espanhol:</b> Proficiência Limitada</li>
+          <li><h5>Português:</h5><span>Nativo ou Bilíngue</span></li>
+          <li><h5>Inglês:</h5><span>Nativo ou Bilíngue</span></li>
+          <li><h5>Francês:</h5><span>Intermediário (estimativa) / Proficiência Limitada</span></li>
+          <li><h5>Espanhol:</h5><span>Proficiência Limitada</span></li>
         </ul>
       </div>
     </section>
@@ -221,7 +213,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
   <!-- Fim Conteudo -->
 
   <!-- Optional JavaScript. -->
@@ -233,7 +225,7 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <!-- Your custom scripts -->
+  <!-- custom scripts -->
   <script src="./js/scripts_test.js"></script>
 </body>
 

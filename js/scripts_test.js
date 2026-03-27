@@ -9,13 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Define o título do site.
       document.getElementById("site-title").textContent = config.title;
-      
+
       // Gera o menu de navegação dinamicamente, iterando sobre o array.
       const navBarContainer = document.getElementById("navBarDynItem");
       navBarContainer.innerHTML = config.navBar
         .map((item) => `
             <li class="nav-item">
-              <a href="${item.target}" class="nav-link">${item.label}</a>
+              <a href="${item.target}" class="nav-link">
+                <svg class="nav-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg>
+                  <use href="${item.icon}"></use>
+                </svg>
+                <span>${item.label}</span>
+              </a>
             </li>`)
         .join("");
       // ####### fim dados config.json #######
@@ -150,6 +155,6 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erro ao carregar os arquivos de dados:", error);
       // Opcional: Exibir uma mensagem de erro para o usuário na página.
       const body = document.querySelector("body");
-      body.innerHTML = `<div style="text-align: center; padding: 40px; font-family: sans-serif;"><h1>Erro ao carregar o conteúdo</h1><p>Não foi possível carregar as informações do site. Tente novamente mais tarde.</p></div>`;
+      body.innerHTML = `<div class="jsError" style="text-align: center; padding: 40px; font-family: sans-serif;"><h1>Erro ao carregar o conteúdo</h1><p>Não foi possível carregar as informações do site. Tente novamente mais tarde.</p></div>`;
     });
 });

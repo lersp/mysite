@@ -1,6 +1,0 @@
-{
-    "git.postCommitCommand": "push",
-    "github-actions.workflows.pinned.workflows": [
-        ".github/workflows/main.yml"
-    ]
-}

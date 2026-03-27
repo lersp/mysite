@@ -3,18 +3,23 @@
     "navBar": [
         {
             "label": "Home",
+            "icon": "./images/home-svgrepo-com.svg",
             "target": ""
+
         },
         {
             "label": "About",
+            "icon": "./images/info-svgrepo-com.svg",
             "target": "#about"
         },
         {
             "label": "Work",
+            "icon": "./images/desktop-svgrepo-com.svg",
             "target": "#work"
         },
         {
             "label": "Contact",
+            "icon": "./images/mail-send-svgrepo-com.svg",
             "target": "#contact"
         }
     ]
