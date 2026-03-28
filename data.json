@@ -11,7 +11,7 @@
       },
     "resumo": "Mais de vinte anos de experiência em suporte técnico de TI, com dois anos dedicados à gestão de negócios e projetos e dois anos ao treinamento de pessoas.",
     "competencias": {
-      "tecnicas": ["Splunk", "Spl", "SQL Server Management Studio", "HTML 5", "CSS 3", "SQL", "IAM", "Windows Server", "Powershell", "MacOs", "JS", "Power Platform"],
+      "tecnicas": ["Splunk", ".Net", "HTML 5", "CSS 3", "SQL", "IAM", "Windows Server", "Powershell", "MacOs", "JS", "Power Platform", "Git/GitHub"],
       "especialidades": ["Gerenciamento de Identidade (IAM)", "Power Platform (App e Flow)", "Administração de Servidores"]
     },
     "projetos": [

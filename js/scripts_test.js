@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
       // ####### fim dados config.json #######
       // ####### Inicio carregar dados do data.json #######
-      /*
+     
       const { perfil } = data;
       
       // Seção #home
@@ -113,41 +113,18 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         containerProjetos.appendChild(div);
       });
-      
+       
 
       // Seção #contact
       const redes = perfil.contato;
       const contArea = document.getElementById("social-links");
       contArea.innerHTML = `
-            <a href="mailto:${redes.email}" target="_blank"><span><i class="fa-brands fa-youtube">Email</i></span></a> | 
-            <a href="${redes.linkedin}" target="_blank"><span><i class="fa-brands fa-youtube">LinkedIn</i></span></a> | 
-            <a href="${redes.github}" target="_blank"><span><i class="fa-brands fa-youtube">GitHub</i></span></a> | 
-            <a href="${redes.youtube}" target="_blank">YouTube</a>
+            <a href="mailto:${redes.email}" target="_blank" class="link-underline link-underline-opacity-0"><i class="bi bi-envelope-fill"></i> <span>Email</span></a> | 
+            <a href="${redes.linkedin}" target="_blank" class="link-underline link-underline-opacity-0"><i class="bi bi-linkedin"></i> <span>LinkedIn</span></a> | 
+            <a href="${redes.github}" target="_blank" class="link-underline link-underline-opacity-0"><i class="bi bi-github"></i> <span>GitHub</span></a> | 
+            <a href="${redes.youtube}" target="_blank" class="link-underline link-underline-opacity-0"><i class="bi bi-youtube"></i> <span>YouTube</span></a>
         `;
 
-      // --- Lógica para animação de Fade-in ao rolar a página ---
-      const sections = document.querySelectorAll("section");
-
-      const observerOptions = {
-        root: null, // Observa em relação ao viewport
-        rootMargin: "0px",
-        threshold: 0.1, // A animação dispara quando 10% da seção está visível
-      };
-
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          // Se a seção está visível na tela
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target); // Anima apenas uma vez
-          }
-        });
-      }, observerOptions);
-
-      // Inicia a observação para cada seção
-      sections.forEach((section) => {
-        observer.observe(section);
-      });*/
     })
     .catch((error) => {
       console.error("Erro ao carregar os arquivos de dados:", error);
