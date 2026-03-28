@@ -21,11 +21,6 @@
             "label": "Contact",
             "icon": "<i class='bi bi-envelope-at'></i>",
             "target": "#contact"
-        },
-        {
-            "label": "Resume.PDF",
-            "icon": "<i class='bi bi-filetype-pdf'></i>",
-            "target": "#download"
         }
     ]
 }
