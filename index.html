@@ -28,9 +28,20 @@
             </p>
         </div>
     </noscript>
+
     <!-- Inicio navBar -->
     <header class="container-sm">
-        <div class="topbar-grad"></div>
+
+        <div class="topbar-grad"><!-- gradient to topbar --> </div>
+
+        <!-- Placeholder for Alert in the website -->
+        <div id="alert" class="container-fluid fixed-top" style="z-index: 1600;">
+            <div class="alert alert-warning alert-dismissible fade hide" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        <!-- website navigation bar -->
         <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark " aria-label="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand ms-3" href="https://www.lersp.com.br" target="_blank" data-bs-toggle="tooltip"
@@ -151,6 +162,8 @@
     <script type="module">
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        //const alertList = document.querySelectorAll('.alert')
+        //const alerts = [...alertList].map(element => new bootstrap.Alert(element))
     </script>
     <script src="./js/scripts.js"></script>
 </body>
